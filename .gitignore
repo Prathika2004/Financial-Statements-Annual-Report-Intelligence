@@ -1,0 +1,38 @@
+# Environment / secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Data (large files, don't commit raw PDFs or processed output to git)
+data/raw_pdfs/**/*.pdf
+data/processed/**/*.json
+data/processed/**/*.npy
+data/processed/**/*.md
+data/cache/
+data/logs/
+!data/raw_pdfs/.gitkeep
+!data/processed/.gitkeep
+
+# Docling / HF model cache if it ends up local to the project
+.cache/
+
+# Locally exported/converted embedding models (OpenVINO/ONNX) -- regenerated
+# on first run by src/embeddings/embedder.py, not source
+models/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

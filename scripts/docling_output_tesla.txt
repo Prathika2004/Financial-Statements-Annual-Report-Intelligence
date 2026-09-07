@@ -1,0 +1,241 @@
+================================================================================
+ANALYZING: Tesla 10K 2022 (tesla_10K_2022.pdf)
+================================================================================
+
+Total text length: 624,003 characters
+Total lines: 3,056
+
+------------------------------------------------------------
+FIRST 5000 CHARACTERS:
+------------------------------------------------------------
+## (Mark One)
+
+## ☒ ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES
+
+## EXCHANGE ACT OF 1934
+
+## UNITED STATES
+
+## SECURITIES AND EXCHANGE COMMISSION
+
+## Washington, D.C. 20549
+
+## FORM 10-K
+
+## For the fiscal year ended December 31, 2021 OR
+
+## ☐ TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+
+For the transition period from \_\_\_\_\_\_\_\_\_ to \_\_\_\_\_\_\_\_\_
+
+## Commission File Number: 001-34756
+
+## Tesla, Inc.
+
+(Exact name of registrant as specified in its charter)
+
+Delaware 91-2197729 (State or other jurisdiction of incorporation or organization) (I.R.S. Employer Identification No.)
+
+## 13101 Tesla Road
+
+Austin, Texas 78725 (Address of principal executive offices) (Zip Code)
+
+## (512) 516-8177
+
+(Registrant's telephone number, including area code)
+
+## Securities registered pursuant to Section 12(b) of the Act:
+
+| Title of each class   | Trading Symbol(s)   | Name of each exchange on which registered   |
+|-----------------------|---------------------|---------------------------------------------|
+| Common stock          | TSLA                | The Nasdaq Global Select Market             |
+
+## Securities registered pursuant to Section 12(g) of the Act: None
+
+Indicate by check mark whether the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act. Yes ☒ No ☐ Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or 15(d) of the Act.    Yes ☐ No ☒ Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 ('Exchange Act') during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days.    Yes ☒ No ☐ Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files).    Yes ☒ No ☐ Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of 'large accelerated filer,' 'accelerated filer,' 'smaller reporting company' and 'emerging growth company' in Rule 12b-2 of the Exchange Act:
+
+Large accelerated filer
+
+☒
+
+Accelerated filer
+
+☐
+
+Non-accelerated filer ☐ Smaller reporting company ☐
+
+Emerging growth
+
+company
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+☐
+
+Indicate by check mark whether the Registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. ☒
+
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).    Yes ☐ No ☒
+
+The aggregate market value of voting stock held by non-affiliates of the registrant, as of June 30, 2021, the last day of the registrant's most recently completed second fiscal quarter, was $541.28 billion (based on the closing price for shares of the registrant's Common Stock as reported by the NASDAQ Global Select Market on June 30, 2021). Shares of Common Stock held by each executive officer, director, and holder of 5% or more of the outstanding Common Stock have been excluded in that such persons may be deemed to be affiliates. This determination of affiliate status is not necessarily a conclusive determination for other purposes.
+
+As of January 31, 2022, there were 1,033,507,611 shares of the registrant's common stock outstanding.
+
+## DOCUMENTS INCORPORATED BY REFERENCE
+
+Portions of the registrant's Proxy Statement for the 2022 Annual Meeting of Stockholders are incorporated herein by reference in Part III of this Annual Report on Form 10-K to the extent stated herein. Such proxy statement will be filed with the Securities and Exchange Commission within 120 days of the registrant's fiscal year ended December 31, 2021.
+
+## TESLA, INC.
+
+## ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2021
+
+## INDEX
+
+|            |                                                                                                              |   Page |
+|------------|--------------------------------------------------------------------------------------------------------------|--------|
+| PART I.    |                                                                         
+
+------------------------------------------------------------
+LINES CONTAINING 'ITEM' (case-insensitive) - First 50:
+------------------------------------------------------------
+  Line   86: | Item 1.    | Business                                                                                                     |      4 |
+  Line   87: | Item 1A.   | Risk Factors                                                                                                 |     14 |
+  Line   88: | Item 1B.   | Unresolved Staff Comments                                                                                    |     28 |
+  Line   89: | Item 2.    | Properties                                                                                                   |     28 |
+  Line   90: | Item 3.    | Legal Proceedings                                                                                            |     28 |
+  Line   91: | Item 4.    | Mine Safety Disclosures                                                                                      |     28 |
+  Line   93: | Item 5.    | Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities |     29 |
+  Line   94: | Item 6.    | [Reserved]                                                                                                   |     30 |
+  Line   95: | Item 7.    | Management's Discussion and Analysis of Financial Condition and Results of Operations                        |     31 |
+  Line   96: | Item 7A.   | Quantitative and Qualitative Disclosures about Market Risk                                                   |     43 |
+  Line   97: | Item 8.    | Financial Statements and Supplementary Data                                                                  |     45 |
+  Line   98: | Item 9.    | Changes in and Disagreements with Accountants on Accounting and Financial Disclosure                         |     96 |
+  Line   99: | Item 9A.   | Controls and Procedures                                                                                      |     96 |
+  Line  100: | Item 9B.   | Other Information                                                                                            |     96 |
+  Line  101: | Item 9C.   | Disclosure Regarding Foreign Jurisdictions that Prevent Inspections                                          |     96 |
+  Line  103: | Item 10.   | Directors, Executive Officers and Corporate Governance                                                       |     97 |
+  Line  104: | Item 11.   | Executive Compensation                                                                                       |     97 |
+  Line  105: | Item 12.   | Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters               |     97 |
+  Line  106: | Item 13.   | Certain Relationships and Related Transactions, and Director Independence                                    |     97 |
+  Line  107: | Item 14.   | Principal Accountant Fees and Services                                                                       |     97 |
+  Line  109: | Item 15.   | Exhibits and Financial Statement Schedules                                                                   |     98 |
+  Line  110: | Item 16.   | Summary                                                                                                      |    115 |
+  Line  115: The discussions in this Annual Report on Form 10-K contain forward-looking statements reflecting our current expectations that involve risks and uncer
+  Line  117: ## ITEM 1. BUSINESS
+  Line  439: ## ITEM 1A. RISK FACTORS
+  Line  596: If our warranty reserves are inadequate to cover future warranty claims on our products, our financial condition and operating results may be harmed. 
+  Line  706: ## ITEM 1B. UNRESOLVED STAFF COMMENTS
+  Line  710: ## ITEM 2. PROPERTIES
+  Line  725: ## ITEM 3. LEGAL PROCEEDINGS
+  Line  729: In addition, each of the matters below is being disclosed pursuant to Item 103 of Regulation S-K because it relates to environmental regulations and a
+  Line  737: ## ITEM 4. MINE SAFETY DISCLOSURES
+  Line  743: ## ITEM 5. MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES
+  Line  773: ## ITEM 6. [RESERVED]
+  Line  775: ## ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+  Line  777: The following discussion and analysis should be read in conjunction with the consolidated financial statements and the related notes included elsewher
+  Line  876: We provide a manufacturer's warranty on all new and used vehicles and a warranty on the installation and components of the energy generation and stora
+  Line 1088: As discussed in and subject to the considerations referenced in Part II, Item 7, Management's Discussion and Analysis of Financial Condition and Resul
+  Line 1127: ## ITEM 7A. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK
+  Line 1141: ## ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA
+  Line 1171: The Company's management is responsible for these consolidated financial statements, for maintaining effective internal control over financial reporti
+  Line 1189: As described in Note 2 to the consolidated financial statements, total accrued warranty, which primarily relates to the automotive segment, was $2,101
+  Line 1193: Addressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the consolidated 
+  Line 1537: Revenues related to repair and maintenance services are recognized over time as services are provided and extended service plans are recognized over t
+  Line 1789: We provide a manufacturer's warranty on all new and used vehicles and a warranty on the installation and components of the energy generation and stora
+  Line 1826: In November 2021, the FASB issued ASU No. 2021-10, Government Assistance (Topic 832). This ASU requires business entities to disclose information abou
+  Line 2429: The following table summarizes our stock-based compensation expense by line item in the consolidated statements of operations (in millions):
+  Line 2710: ## ITEM 9. CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL DISCLOSURE
+  Line 2714: ## ITEM 9A. CONTROLS AND PROCEDURES
+  Line 2738: ## ITEM 9B. OTHER INFORMATION
+  Line 2742: ## ITEM 9C. DISCLOSURE REGARDING FOREIGN JURISDICTIONS THAT PREVENT INSPECTIONS
+
+  Total lines matching 'item': 64
+
+------------------------------------------------------------
+ALL 'ITEM <N>' VARIATIONS (any case, with or without markdown):
+------------------------------------------------------------
+  Line  117: [## ITEM 1. BUSINESS]
+  Line  439: [## ITEM 1A. RISK FACTORS]
+  Line  706: [## ITEM 1B. UNRESOLVED STAFF COMMENTS]
+  Line  710: [## ITEM 2. PROPERTIES]
+  Line  725: [## ITEM 3. LEGAL PROCEEDINGS]
+  Line  737: [## ITEM 4. MINE SAFETY DISCLOSURES]
+  Line  743: [## ITEM 5. MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES]
+  Line  773: [## ITEM 6. [RESERVED]]
+  Line  775: [## ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS]
+  Line 1127: [## ITEM 7A. QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK]
+  Line 1141: [## ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA]
+  Line 2710: [## ITEM 9. CHANGES IN AND DISAGREEMENTS WITH ACCOUNTANTS ON ACCOUNTING AND FINANCIAL DISCLOSURE]
+  Line 2714: [## ITEM 9A. CONTROLS AND PROCEDURES]
+  Line 2738: [## ITEM 9B. OTHER INFORMATION]
+  Line 2742: [## ITEM 9C. DISCLOSURE REGARDING FOREIGN JURISDICTIONS THAT PREVENT INSPECTIONS]
+  Line 2748: [## ITEM 10. DIRECTORS, EXECUTIVE OFFICERS AND CORPORATE GOVERNANCE]
+  Line 2752: [## ITEM 11. EXECUTIVE COMPENSATION]
+  Line 2756: [## ITEM 12. SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER MATTERS]
+  Line 2760: [## ITEM 13. CERTAIN RELATIONSHIPS AND RELATED TRANSACTIONS AND DIRECTOR INDEPENDENCE]
+  Line 2764: [## ITEM 14. PRINCIPAL ACCOUNTANT FEES AND SERVICES]
+  Line 2770: [## ITEM 15. EXHIBITS AND FINANCIAL STATEMENT SCHEDULES]
+  Line 3021: [## ITEM 16. SUMMARY]
+
+  Total relaxed matches: 22
+
+------------------------------------------------------------
+CURRENT REGEX MATCHES:
+------------------------------------------------------------
+
+  Total regex matches: 0
+
+------------------------------------------------------------
+MARKDOWN HEADERS (first 50):
+------------------------------------------------------------
+  Line    1: ## (Mark One)
+  Line    3: ## ☒ ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES
+  Line    5: ## EXCHANGE ACT OF 1934
+  Line    7: ## UNITED STATES
+  Line    9: ## SECURITIES AND EXCHANGE COMMISSION
+  Line   11: ## Washington, D.C. 20549
+  Line   13: ## FORM 10-K
+  Line   15: ## For the fiscal year ended December 31, 2021 OR
+  Line   17: ## ☐ TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+  Line   21: ## Commission File Number: 001-34756
+  Line   23: ## Tesla, Inc.
+  Line   29: ## 13101 Tesla Road
+  Line   33: ## (512) 516-8177
+  Line   37: ## Securities registered pursuant to Section 12(b) of the Act:
+  Line   43: ## Securities registered pursuant to Section 12(g) of the Act: None
+  Line   73: ## DOCUMENTS INCORPORATED BY REFERENCE
+  Line   77: ## TESLA, INC.
+  Line   79: ## ANNUAL REPORT ON FORM 10-K FOR THE YEAR ENDED DECEMBER 31, 2021
+  Line   81: ## INDEX
+  Line  113: ## Forward-Looking Statements
+  Line  117: ## ITEM 1. BUSINESS
+  Line  119: ## Overview
+  Line  123: ## Segment Information
+  Line  129: ## Our Products and Services
+  Line  131: ## Automotive
+  Line  133: ## Model 3
+  Line  137: ## Model Y
+  Line  141: ## Model S and Model X
+  Line  145: ## Future Consumer and Commercial Electric Vehicles
+  Line  149: ## Energy Generation and Storage
+  Line  151: ## Energy Storage Products
+  Line  157: ## PART I
+  Line  159: ## Solar Energy Offerings
+  Line  165: ## Technology
+  Line  167: ## Automotive
+  Line  169: ## Battery and Powertrain
+  Line  175: ## Vehicle Control and Infotainment Software
+  Line  179: ## Self-Driving Development
+  Line  187: ## Energy Generation and Storage
+  Line  189: ## Energy Storage Products
+  Line  193: ## Solar Energy Systems
+  Line  197: ## Design and Engineering
+  Line  199: ## Automotive
+  Line  205: ## Energy Generation and Storage
+  Line  209: ## Sales and Marketing
+  Line  213: ## Automotive
+  Line  215: ## Direct Sales
+  Line  221: ## Used Vehicle Sales
+  Line  225: ## Public Charging
+  Line  231: ## In-App Upgrades
+
+  Total markdown headers: 365

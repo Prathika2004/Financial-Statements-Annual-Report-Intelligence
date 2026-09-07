@@ -1,0 +1,69 @@
+[
+  {
+    "id": "tesla_net_income_fy2023",
+    "question": "What was Tesla's net income attributable to common stockholders in fiscal year 2023?",
+    "reference": "Tesla's net income attributable to common stockholders in fiscal year 2023 was $15.00 billion, a favorable change of $2.44 billion compared to the prior year.",
+    "filters": {
+      "ticker": "TSLA",
+      "fiscal_year": 2023
+    }
+  },
+  {
+    "id": "tesla_vehicle_deliveries_fy2023",
+    "question": "How many consumer vehicles did Tesla produce and deliver in 2023?",
+    "reference": "In 2023, Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.",
+    "filters": {
+      "ticker": "TSLA",
+      "fiscal_year": 2023
+    }
+  },
+  {
+    "id": "tesla_automotive_sales_growth_fy2023",
+    "question": "How much did Tesla's automotive sales revenue increase in 2023 compared to 2022?",
+    "reference": "Tesla's automotive sales revenue increased $11.30 billion, or 17%, in the year ended December 31, 2023 compared to the year ended December 31, 2022, primarily due to an increase in combined Model 3/Model Y deliveries.",
+    "filters": {
+      "ticker": "TSLA",
+      "fiscal_year": 2023
+    }
+  },
+  {
+    "id": "jnj_worldwide_sales_fy2023",
+    "question": "How much did Johnson & Johnson's worldwide sales grow in 2023?",
+    "reference": "Johnson & Johnson's worldwide sales increased 6.5% to $85.2 billion in 2023, compared to a 1.6% increase in 2022.",
+    "filters": {
+      "ticker": "JNJ",
+      "fiscal_year": 2023
+    }
+  },
+  {
+    "id": "cybersecurity_risk_factors_general",
+    "question": "What are the main risk factors related to cybersecurity that companies describe in their 10-K filings?",
+    "reference": "Companies describe cybersecurity risks including unauthorized access, data theft, computer viruses, ransomware, and other security incidents that could disrupt operations, lead to data breaches, harm reputation, and result in legal liability or regulatory penalties. Risks also stem from the complexity and geographic breadth of the systems that need to be defended, including against state-sponsored threat actors.",
+    "filters": null
+  },
+  {
+    "id": "visa_cybersecurity_approach",
+    "question": "What is Visa's approach to cybersecurity?",
+    "reference": "Visa states that as a global company providing payment services to consumers and companies around the world, trust is indispensable, and describes a cybersecurity program addressing the risks inherent to operating global payment systems.",
+    "filters": {
+      "ticker": "V"
+    }
+  },
+  {
+    "id": "unanswerable_out_of_dataset_company",
+    "question": "What was Netflix's revenue in fiscal year 2023?",
+    "reference": "This question cannot be answered from the provided sources -- Netflix's 10-K filings are not part of this dataset (the dataset covers Amazon, Apple, Berkshire Hathaway, Coca-Cola, Intel, Johnson & Johnson, Microsoft, Nvidia, Tesla, and Visa only).",
+    "filters": null,
+    "expect_refusal": true
+  },
+  {
+    "id": "unanswerable_wrong_fiscal_year",
+    "question": "What was Tesla's revenue in fiscal year 2030?",
+    "reference": "This question cannot be answered from the provided sources -- fiscal year 2030 has not occurred yet and no such filing exists in this dataset.",
+    "filters": {
+      "ticker": "TSLA",
+      "fiscal_year": 2030
+    },
+    "expect_refusal": true
+  }
+]

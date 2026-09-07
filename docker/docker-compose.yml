@@ -1,0 +1,25 @@
+# Local Qdrant vector database for Stage 6 (retrieval storage).
+#
+# Save as: sec-rag-project/docker/docker-compose.yml
+#
+# Usage (run from the docker/ directory, or pass -f docker/docker-compose.yml
+# from the project root):
+#   docker compose up -d       # start
+#   docker compose down        # stop (data persists in the named volume)
+#   docker compose down -v     # stop AND wipe stored vectors
+#
+# Ports: 6333 is Qdrant's REST API, 6334 is gRPC (qdrant-client uses gRPC by
+# default when available -- faster for bulk upserts than REST).
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: sec_rag_qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+volumes:
+  qdrant_storage:

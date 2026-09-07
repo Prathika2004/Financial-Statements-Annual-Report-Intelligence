@@ -1,0 +1,98 @@
+[
+  {
+    "id": "tesla_net_income_fy2023",
+    "question": "What was Tesla's net income attributable to common stockholders in fiscal year 2023?",
+    "answer": "Tesla's net income attributable to common stockholders in fiscal year 2023 was $15.00 billion [Source 1].",
+    "reference": "Tesla's net income attributable to common stockholders in fiscal year 2023 was $15.00 billion, a favorable change of $2.44 billion compared to the prior year.",
+    "expect_refusal": false,
+    "scores": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9999999999998349,
+      "context_precision": 0.7555555555303703,
+      "context_recall": 1.0
+    },
+    "elapsed_seconds": 1245.0
+  },
+  {
+    "id": "tesla_vehicle_deliveries_fy2023",
+    "question": "How many consumer vehicles did Tesla produce and deliver in 2023?",
+    "answer": null,
+    "reference": "In 2023, Tesla produced 1,845,985 consumer vehicles and delivered 1,808,581 consumer vehicles.",
+    "expect_refusal": false,
+    "scores": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9827936297268721,
+      "context_precision": 0.999999999975,
+      "context_recall": 1.0
+    },
+    "elapsed_seconds": 591.7,
+    "_note": "Scores recovered from run log; generated answer text was not captured before the incremental-save fix and is genuinely lost for this entry."
+  },
+  {
+    "id": "tesla_automotive_sales_growth_fy2023",
+    "question": "How much did Tesla's automotive sales revenue increase in 2023 compared to 2022?",
+    "answer": null,
+    "reference": "Tesla's automotive sales revenue increased $11.30 billion, or 17%, in the year ended December 31, 2023 compared to the year ended December 31, 2022, primarily due to an increase in combined Model 3/Model Y deliveries.",
+    "expect_refusal": false,
+    "scores": {
+      "faithfulness": 0.6666666666666666,
+      "answer_relevancy": 0.9948801365722346,
+      "context_precision": 0.999999999975,
+      "context_recall": 1.0
+    },
+    "elapsed_seconds": 627.9,
+    "_note": "Scores recovered from run log; generated answer text was not captured before the incremental-save fix and is genuinely lost for this entry."
+  },
+  {
+    "id": "jnj_worldwide_sales_fy2023",
+    "question": "How much did Johnson & Johnson's worldwide sales grow in 2023?",
+    "answer": null,
+    "reference": "Johnson & Johnson's worldwide sales increased 6.5% to $85.2 billion in 2023, compared to a 1.6% increase in 2022.",
+    "expect_refusal": false,
+    "scores": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9621319093766753,
+      "context_precision": 0.999999999975,
+      "context_recall": 1.0
+    },
+    "elapsed_seconds": 606.7,
+    "_note": "Scores recovered from run log; generated answer text was not captured before the incremental-save fix and is genuinely lost for this entry. faithfulness=0.0 is worth re-checking once this question re-runs, or investigating separately -- unlike the others, this one score suggests something more than just the citation-sentence artifact."
+  },
+  {
+    "id": "cybersecurity_risk_factors_general",
+    "question": "What are the main risk factors related to cybersecurity that companies describe in their 10-K filings?",
+    "answer": "Companies describe several main risk factors related to cybersecurity in their 10-K filings. These include the potential for cybersecurity incidents to materially affect their business strategy, results of operations, or financial condition [Source 2, Source 3, Source 4, Source 5]. Additionally, there is a risk of data breaches, intellectual property theft, claims, litigation, regulatory investigations, significant liability, and reputational damage due to cyber-attacks or other security incidents [Source 4, Source 5]. Both NVIDIA and Microsoft mention that their business strategies are tied to cybersecurity and they are committed to continuously monitoring and enhancing their cybersecurity defenses and resiliency [Source 1, Source 2, Source 3].",
+    "reference": "Companies describe cybersecurity risks including unauthorized access, data theft, computer viruses, ransomware, and other security incidents that could disrupt operations, lead to data breaches, harm reputation, and result in legal liability or regulatory penalties. Risks also stem from the complexity and geographic breadth of the systems that need to be defended, including against state-sponsored threat actors.",
+    "expect_refusal": false,
+    "scores": {
+      "faithfulness": 0.625,
+      "answer_relevancy": 0.9765802062781416,
+      "context_precision": 0.99999999998,
+      "context_recall": 1.0
+    },
+    "elapsed_seconds": 1208.9
+  },
+  {
+    "id": "visa_cybersecurity_approach",
+    "question": "What is Visa's approach to cybersecurity?",
+    "error": "2 validation errors for AnswerRelevanceOutput\nquestion\n  Field required [type=missing, input_value={'description': 'Structur...tput', 'type': 'object'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nnoncommittal\n  Field required [type=missing, input_value={'description': 'Structur...tput', 'type': 'object'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+    "elapsed_seconds": 475.1
+  },
+  {
+    "id": "unanswerable_out_of_dataset_company",
+    "question": "What was Netflix's revenue in fiscal year 2023?",
+    "error": "2 validation errors for AnswerRelevanceOutput\nquestion\n  Field required [type=missing, input_value={'description': 'Structur...tput', 'type': 'object'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nnoncommittal\n  Field required [type=missing, input_value={'description': 'Structur...tput', 'type': 'object'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+    "elapsed_seconds": 425.0
+  },
+  {
+    "id": "unanswerable_wrong_fiscal_year",
+    "question": "What was Tesla's revenue in fiscal year 2030?",
+    "answer": "The provided filing excerpts do not contain this information.",
+    "reference": "This question cannot be answered from the provided sources -- fiscal year 2030 has not occurred yet and no such filing exists in this dataset.",
+    "expect_refusal": true,
+    "scores": {
+      "refused": true
+    },
+    "elapsed_seconds": 164.0
+  }
+]

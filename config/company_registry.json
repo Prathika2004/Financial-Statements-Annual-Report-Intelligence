@@ -1,0 +1,721 @@
+{
+  "TSLA": {
+    "company_name": "Tesla, Inc.",
+    "cik": "0001318605",
+    "filings": [
+      {
+        "filing_date": "2026-01-29",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001628280-26-003952"
+      },
+      {
+        "filing_date": "2025-01-30",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0001628280-25-003063"
+      },
+      {
+        "filing_date": "2024-01-29",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0001628280-24-002390"
+      },
+      {
+        "filing_date": "2023-01-31",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0000950170-23-001409"
+      },
+      {
+        "filing_date": "2022-02-07",
+        "reporting_period_end": "2021-12-31",
+        "accession_number": "0000950170-22-000796"
+      },
+      {
+        "filing_date": "2021-02-08",
+        "reporting_period_end": "2020-12-31",
+        "accession_number": "0001564590-21-004599"
+      },
+      {
+        "filing_date": "2020-02-13",
+        "reporting_period_end": "2019-12-31",
+        "accession_number": "0001564590-20-004475"
+      },
+      {
+        "filing_date": "2019-02-19",
+        "reporting_period_end": "2018-12-31",
+        "accession_number": "0001564590-19-003165"
+      }
+    ]
+  },
+  "AAPL": {
+    "company_name": "Apple Inc.",
+    "cik": "0000320193",
+    "filings": [
+      {
+        "filing_date": "2025-10-31",
+        "reporting_period_end": "2025-09-27",
+        "accession_number": "0000320193-25-000079"
+      },
+      {
+        "filing_date": "2024-11-01",
+        "reporting_period_end": "2024-09-28",
+        "accession_number": "0000320193-24-000123"
+      },
+      {
+        "filing_date": "2023-11-03",
+        "reporting_period_end": "2023-09-30",
+        "accession_number": "0000320193-23-000106"
+      },
+      {
+        "filing_date": "2022-10-28",
+        "reporting_period_end": "2022-09-24",
+        "accession_number": "0000320193-22-000108"
+      },
+      {
+        "filing_date": "2021-10-29",
+        "reporting_period_end": "2021-09-25",
+        "accession_number": "0000320193-21-000105"
+      },
+      {
+        "filing_date": "2020-10-30",
+        "reporting_period_end": "2020-09-26",
+        "accession_number": "0000320193-20-000096"
+      },
+      {
+        "filing_date": "2019-10-31",
+        "reporting_period_end": "2019-09-28",
+        "accession_number": "0000320193-19-000119"
+      },
+      {
+        "filing_date": "2018-11-05",
+        "reporting_period_end": "2018-09-29",
+        "accession_number": "0000320193-18-000145"
+      },
+      {
+        "filing_date": "2017-11-03",
+        "reporting_period_end": "2017-09-30",
+        "accession_number": "0000320193-17-000070"
+      },
+      {
+        "filing_date": "2016-10-26",
+        "reporting_period_end": "2016-09-24",
+        "accession_number": "0001628280-16-020309"
+      },
+      {
+        "filing_date": "2015-10-28",
+        "reporting_period_end": "2015-09-26",
+        "accession_number": "0001193125-15-356351"
+      }
+    ]
+  },
+  "MSFT": {
+    "company_name": "MICROSOFT CORP",
+    "cik": "0000789019",
+    "filings": [
+      {
+        "filing_date": "2026-07-29",
+        "reporting_period_end": "2026-06-30",
+        "accession_number": "0001193125-26-323660"
+      },
+      {
+        "filing_date": "2025-07-30",
+        "reporting_period_end": "2025-06-30",
+        "accession_number": "0000950170-25-100235"
+      },
+      {
+        "filing_date": "2024-07-30",
+        "reporting_period_end": "2024-06-30",
+        "accession_number": "0000950170-24-087843"
+      },
+      {
+        "filing_date": "2023-07-27",
+        "reporting_period_end": "2023-06-30",
+        "accession_number": "0000950170-23-035122"
+      },
+      {
+        "filing_date": "2022-07-28",
+        "reporting_period_end": "2022-06-30",
+        "accession_number": "0001564590-22-026876"
+      },
+      {
+        "filing_date": "2021-07-29",
+        "reporting_period_end": "2021-06-30",
+        "accession_number": "0001564590-21-039151"
+      },
+      {
+        "filing_date": "2020-07-30",
+        "reporting_period_end": "2020-06-30",
+        "accession_number": "0001564590-20-034944"
+      }
+    ]
+  },
+  "AMZN": {
+    "company_name": "AMAZON COM INC",
+    "cik": "0001018724",
+    "filings": [
+      {
+        "filing_date": "2026-02-06",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001018724-26-000004"
+      },
+      {
+        "filing_date": "2025-02-07",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0001018724-25-000004"
+      },
+      {
+        "filing_date": "2024-02-02",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0001018724-24-000008"
+      },
+      {
+        "filing_date": "2023-02-03",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0001018724-23-000004"
+      },
+      {
+        "filing_date": "2022-02-04",
+        "reporting_period_end": "2021-12-31",
+        "accession_number": "0001018724-22-000005"
+      },
+      {
+        "filing_date": "2021-02-03",
+        "reporting_period_end": "2020-12-31",
+        "accession_number": "0001018724-21-000004"
+      }
+    ]
+  },
+  "GOOGL": {
+    "company_name": "Alphabet Inc.",
+    "cik": "0001652044",
+    "filings": [
+      {
+        "filing_date": "2026-02-05",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001652044-26-000018"
+      },
+      {
+        "filing_date": "2025-02-05",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0001652044-25-000014"
+      },
+      {
+        "filing_date": "2024-01-31",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0001652044-24-000022"
+      }
+    ]
+  },
+  "META": {
+    "company_name": "Meta Platforms, Inc.",
+    "cik": "0001326801",
+    "filings": [
+      {
+        "filing_date": "2026-01-29",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001628280-26-003942"
+      },
+      {
+        "filing_date": "2025-01-30",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0001326801-25-000017"
+      }
+    ]
+  },
+  "NVDA": {
+    "company_name": "NVIDIA CORP",
+    "cik": "0001045810",
+    "filings": [
+      {
+        "filing_date": "2026-02-25",
+        "reporting_period_end": "2026-01-25",
+        "accession_number": "0001045810-26-000021"
+      },
+      {
+        "filing_date": "2025-02-26",
+        "reporting_period_end": "2025-01-26",
+        "accession_number": "0001045810-25-000023"
+      },
+      {
+        "filing_date": "2024-02-21",
+        "reporting_period_end": "2024-01-28",
+        "accession_number": "0001045810-24-000029"
+      },
+      {
+        "filing_date": "2023-02-24",
+        "reporting_period_end": "2023-01-29",
+        "accession_number": "0001045810-23-000017"
+      },
+      {
+        "filing_date": "2022-03-18",
+        "reporting_period_end": "2022-01-30",
+        "accession_number": "0001045810-22-000036"
+      },
+      {
+        "filing_date": "2021-02-26",
+        "reporting_period_end": "2021-01-31",
+        "accession_number": "0001045810-21-000010"
+      }
+    ]
+  },
+  "JPM": {
+    "company_name": "JPMORGAN CHASE & CO",
+    "cik": "0000019617",
+    "filings": [
+      {
+        "filing_date": "2026-02-13",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001628280-26-008131"
+      }
+    ]
+  },
+  "JNJ": {
+    "company_name": "JOHNSON & JOHNSON",
+    "cik": "0000200406",
+    "filings": [
+      {
+        "filing_date": "2026-02-11",
+        "reporting_period_end": "2025-12-28",
+        "accession_number": "0000200406-26-000016"
+      },
+      {
+        "filing_date": "2025-02-13",
+        "reporting_period_end": "2024-12-29",
+        "accession_number": "0000200406-25-000038"
+      },
+      {
+        "filing_date": "2024-02-16",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0000200406-24-000013"
+      },
+      {
+        "filing_date": "2023-02-16",
+        "reporting_period_end": "2023-01-01",
+        "accession_number": "0000200406-23-000016"
+      },
+      {
+        "filing_date": "2022-02-17",
+        "reporting_period_end": "2022-01-02",
+        "accession_number": "0000200406-22-000022"
+      },
+      {
+        "filing_date": "2021-02-22",
+        "reporting_period_end": "2021-01-03",
+        "accession_number": "0000200406-21-000008"
+      },
+      {
+        "filing_date": "2020-02-18",
+        "reporting_period_end": "2019-12-29",
+        "accession_number": "0000200406-20-000010"
+      },
+      {
+        "filing_date": "2019-02-20",
+        "reporting_period_end": "2018-12-30",
+        "accession_number": "0000200406-19-000009"
+      }
+    ]
+  },
+  "WMT": {
+    "company_name": "Walmart Inc.",
+    "cik": "0000104169",
+    "filings": [
+      {
+        "filing_date": "2026-03-13",
+        "reporting_period_end": "2026-01-31",
+        "accession_number": "0000104169-26-000055"
+      },
+      {
+        "filing_date": "2025-03-14",
+        "reporting_period_end": "2025-01-31",
+        "accession_number": "0000104169-25-000021"
+      },
+      {
+        "filing_date": "2024-03-15",
+        "reporting_period_end": "2024-01-31",
+        "accession_number": "0000104169-24-000056"
+      }
+    ]
+  },
+  "XOM": {
+    "company_name": "ExxonMobil Holdings Corp",
+    "cik": "0002115436",
+    "filings": []
+  },
+  "BRK-B": {
+    "company_name": "BERKSHIRE HATHAWAY INC",
+    "cik": "0001067983",
+    "filings": [
+      {
+        "filing_date": "2026-03-02",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001193125-26-083899"
+      },
+      {
+        "filing_date": "2025-02-24",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0000950170-25-025210"
+      },
+      {
+        "filing_date": "2024-02-26",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0000950170-24-019719"
+      },
+      {
+        "filing_date": "2023-02-27",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0000950170-23-004451"
+      },
+      {
+        "filing_date": "2022-02-28",
+        "reporting_period_end": "2021-12-31",
+        "accession_number": "0001564590-22-007322"
+      },
+      {
+        "filing_date": "2021-03-01",
+        "reporting_period_end": "2020-12-31",
+        "accession_number": "0001564590-21-009611"
+      },
+      {
+        "filing_date": "2020-02-24",
+        "reporting_period_end": "2019-12-31",
+        "accession_number": "0001564590-20-005874"
+      },
+      {
+        "filing_date": "2019-02-25",
+        "reporting_period_end": "2018-12-31",
+        "accession_number": "0001193125-19-048926"
+      },
+      {
+        "filing_date": "2018-02-26",
+        "reporting_period_end": "2017-12-31",
+        "accession_number": "0001193125-18-057033"
+      },
+      {
+        "filing_date": "2017-02-27",
+        "reporting_period_end": "2016-12-31",
+        "accession_number": "0001193125-17-056969"
+      }
+    ]
+  },
+  "PG": {
+    "company_name": "PROCTER & GAMBLE Co",
+    "cik": "0000080424",
+    "filings": [
+      {
+        "filing_date": "2026-08-04",
+        "reporting_period_end": "2026-06-30",
+        "accession_number": "0000080424-26-000103"
+      },
+      {
+        "filing_date": "2025-08-04",
+        "reporting_period_end": "2025-06-30",
+        "accession_number": "0000080424-25-000076"
+      },
+      {
+        "filing_date": "2024-08-05",
+        "reporting_period_end": "2024-06-30",
+        "accession_number": "0000080424-24-000083"
+      },
+      {
+        "filing_date": "2023-08-04",
+        "reporting_period_end": "2023-06-30",
+        "accession_number": "0000080424-23-000073"
+      },
+      {
+        "filing_date": "2022-08-05",
+        "reporting_period_end": "2022-06-30",
+        "accession_number": "0000080424-22-000064"
+      }
+    ]
+  },
+  "KO": {
+    "company_name": "COCA COLA CO",
+    "cik": "0000021344",
+    "filings": [
+      {
+        "filing_date": "2026-02-20",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001628280-26-010047"
+      },
+      {
+        "filing_date": "2025-02-20",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0000021344-25-000011"
+      },
+      {
+        "filing_date": "2024-02-20",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0000021344-24-000009"
+      },
+      {
+        "filing_date": "2023-02-21",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0000021344-23-000011"
+      },
+      {
+        "filing_date": "2022-02-22",
+        "reporting_period_end": "2021-12-31",
+        "accession_number": "0000021344-22-000009"
+      },
+      {
+        "filing_date": "2021-02-25",
+        "reporting_period_end": "2020-12-31",
+        "accession_number": "0000021344-21-000008"
+      },
+      {
+        "filing_date": "2020-02-24",
+        "reporting_period_end": "2019-12-31",
+        "accession_number": "0000021344-20-000006"
+      },
+      {
+        "filing_date": "2019-02-21",
+        "reporting_period_end": "2018-12-31",
+        "accession_number": "0000021344-19-000014"
+      }
+    ]
+  },
+  "NFLX": {
+    "company_name": "NETFLIX INC",
+    "cik": "0001065280",
+    "filings": [
+      {
+        "filing_date": "2026-01-23",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001065280-26-000034"
+      },
+      {
+        "filing_date": "2025-01-27",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0001065280-25-000044"
+      },
+      {
+        "filing_date": "2024-01-26",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0001065280-24-000030"
+      }
+    ]
+  },
+  "INTC": {
+    "company_name": "INTEL CORP",
+    "cik": "0000050863",
+    "filings": [
+      {
+        "filing_date": "2026-01-23",
+        "reporting_period_end": "2025-12-27",
+        "accession_number": "0000050863-26-000011"
+      },
+      {
+        "filing_date": "2025-01-31",
+        "reporting_period_end": "2024-12-28",
+        "accession_number": "0000050863-25-000009"
+      },
+      {
+        "filing_date": "2024-01-26",
+        "reporting_period_end": "2023-12-30",
+        "accession_number": "0000050863-24-000010"
+      },
+      {
+        "filing_date": "2023-01-27",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0000050863-23-000006"
+      },
+      {
+        "filing_date": "2022-01-27",
+        "reporting_period_end": "2021-12-25",
+        "accession_number": "0000050863-22-000007"
+      },
+      {
+        "filing_date": "2021-01-22",
+        "reporting_period_end": "2020-12-26",
+        "accession_number": "0000050863-21-000010"
+      },
+      {
+        "filing_date": "2020-01-24",
+        "reporting_period_end": "2019-12-28",
+        "accession_number": "0000050863-20-000011"
+      }
+    ]
+  },
+  "V": {
+    "company_name": "VISA INC.",
+    "cik": "0001403161",
+    "filings": [
+      {
+        "filing_date": "2025-11-06",
+        "reporting_period_end": "2025-09-30",
+        "accession_number": "0001403161-25-000089"
+      },
+      {
+        "filing_date": "2024-11-13",
+        "reporting_period_end": "2024-09-30",
+        "accession_number": "0001403161-24-000058"
+      },
+      {
+        "filing_date": "2023-11-15",
+        "reporting_period_end": "2023-09-30",
+        "accession_number": "0001403161-23-000099"
+      },
+      {
+        "filing_date": "2022-11-16",
+        "reporting_period_end": "2022-09-30",
+        "accession_number": "0001403161-22-000081"
+      },
+      {
+        "filing_date": "2021-11-18",
+        "reporting_period_end": "2021-09-30",
+        "accession_number": "0001403161-21-000060"
+      },
+      {
+        "filing_date": "2020-11-19",
+        "reporting_period_end": "2020-09-30",
+        "accession_number": "0001403161-20-000070"
+      },
+      {
+        "filing_date": "2019-11-14",
+        "reporting_period_end": "2019-09-30",
+        "accession_number": "0001403161-19-000050"
+      },
+      {
+        "filing_date": "2018-11-16",
+        "reporting_period_end": "2018-09-30",
+        "accession_number": "0001403161-18-000055"
+      },
+      {
+        "filing_date": "2017-11-17",
+        "reporting_period_end": "2017-09-30",
+        "accession_number": "0001403161-17-000044"
+      },
+      {
+        "filing_date": "2016-11-15",
+        "reporting_period_end": "2016-09-30",
+        "accession_number": "0001403161-16-000058"
+      },
+      {
+        "filing_date": "2015-11-20",
+        "reporting_period_end": "2015-09-30",
+        "accession_number": "0001403161-15-000013"
+      }
+    ]
+  },
+  "MA": {
+    "company_name": "Mastercard Inc",
+    "cik": "0001141391",
+    "filings": [
+      {
+        "filing_date": "2026-02-11",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001141391-26-000013"
+      },
+      {
+        "filing_date": "2025-02-12",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0001141391-25-000011"
+      },
+      {
+        "filing_date": "2024-02-13",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0001141391-24-000022"
+      },
+      {
+        "filing_date": "2023-02-14",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0001141391-23-000020"
+      },
+      {
+        "filing_date": "2022-02-11",
+        "reporting_period_end": "2021-12-31",
+        "accession_number": "0001141391-22-000023"
+      },
+      {
+        "filing_date": "2021-02-12",
+        "reporting_period_end": "2020-12-31",
+        "accession_number": "0001141391-21-000018"
+      },
+      {
+        "filing_date": "2020-02-14",
+        "reporting_period_end": "2019-12-31",
+        "accession_number": "0001141391-20-000032"
+      },
+      {
+        "filing_date": "2019-02-13",
+        "reporting_period_end": "2018-12-31",
+        "accession_number": "0001141391-19-000013"
+      }
+    ]
+  },
+  "PFE": {
+    "company_name": "PFIZER INC",
+    "cik": "0000078003",
+    "filings": [
+      {
+        "filing_date": "2026-02-26",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0000078003-26-000026"
+      },
+      {
+        "filing_date": "2025-02-27",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0000078003-25-000054"
+      },
+      {
+        "filing_date": "2024-02-22",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0000078003-24-000039"
+      },
+      {
+        "filing_date": "2023-02-23",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0000078003-23-000024"
+      },
+      {
+        "filing_date": "2022-02-24",
+        "reporting_period_end": "2021-12-31",
+        "accession_number": "0000078003-22-000027"
+      },
+      {
+        "filing_date": "2021-02-25",
+        "reporting_period_end": "2020-12-31",
+        "accession_number": "0000078003-21-000038"
+      }
+    ]
+  },
+  "BA": {
+    "company_name": "BOEING CO",
+    "cik": "0000012927",
+    "filings": [
+      {
+        "filing_date": "2026-01-30",
+        "reporting_period_end": "2025-12-31",
+        "accession_number": "0001628280-26-004357"
+      },
+      {
+        "filing_date": "2025-02-03",
+        "reporting_period_end": "2024-12-31",
+        "accession_number": "0000012927-25-000015"
+      },
+      {
+        "filing_date": "2024-01-31",
+        "reporting_period_end": "2023-12-31",
+        "accession_number": "0000012927-24-000010"
+      },
+      {
+        "filing_date": "2023-01-27",
+        "reporting_period_end": "2022-12-31",
+        "accession_number": "0000012927-23-000007"
+      },
+      {
+        "filing_date": "2022-01-31",
+        "reporting_period_end": "2021-12-31",
+        "accession_number": "0000012927-22-000010"
+      },
+      {
+        "filing_date": "2021-02-01",
+        "reporting_period_end": "2020-12-31",
+        "accession_number": "0000012927-21-000011"
+      },
+      {
+        "filing_date": "2020-01-31",
+        "reporting_period_end": "2019-12-31",
+        "accession_number": "0000012927-20-000014"
+      }
+    ]
+  }
+}

@@ -1,0 +1,426 @@
+================================================================================
+ANALYZING: Amazon 10K 2022 (amzn_10K_2022.pdf)
+================================================================================
+
+Total text length: 332,016 characters
+Total lines: 2,235
+
+------------------------------------------------------------
+FIRST 5000 CHARACTERS:
+------------------------------------------------------------
+## UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+
+Washington, D.C. 20549
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+FORM 10-K
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+(Mark One)
+
+☒ ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+
+For the fiscal year ended December 31, 2021
+
+or
+
+- [ ] ☐ TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+
+For the transition period from            to             .
+
+Commission File No. 000-22513
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+## AMAZON.COM, INC.
+
+(Exact name of registrant as specified in its charter)
+
+Delaware
+
+91-1646860
+
+(State or other jurisdiction of incorporation or organization)
+
+(I.R.S. Employer Identification No.)
+
+410 Terry Avenue North Seattle, Washington 98109-5210 (206) 266-1000
+
+(Address and telephone number, including area code, of registrant's principal executive offices)
+
+Securities registered pursuant to Section 12(b) of the Act:
+
+Title of Each Class Trading Symbol(s)
+
+Name of Each Exchange on Which Registered
+
+Common Stock, par value $.01 per share AMZN
+
+Nasdaq Global Select Market
+
+Securities registered pursuant to Section 12(g) of the Act:
+
+None
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.    Yes ☒
+
+- [ ] No ☐
+
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Exchange Act.    Yes
+
+- [ ] ☐
+
+- [x] No ☒
+
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days.    Yes ☒ No ☐
+
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of
+
+Regulation S-T during the preceding 12 months (or for such shorter period that the registrant was required to submit such files).    Yes ☒ No ☐
+
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of 'large accelerated filer,' 'accelerated filer,' 'smaller reporting company,' and 'emerging growth company' in Rule 12b-2 of the Exchange Act.
+
+- [x] Large accelerated filer ☒
+
+- [ ] Accelerated filer ☐
+
+- [ ] Non-accelerated filer ☐
+
+- [ ] Smaller reporting company ☐
+
+- [ ] Emerging growth company ☐
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+
+Indicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. ☒
+
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).    Yes
+
+Aggregate market value of voting stock held by non-affiliates of the registrant as of June 30, 2021 Number of shares of common stock outstanding as of January 26, 2022
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+- [ ] ☐
+
+- [x] No ☒
+
+$
+
+1,507,362,696,975
+
+508,844,410
+
+## DOCUMENTS INCORPORATED BY REFERENCE
+
+The information required by Part III of this Report, to the extent not set forth herein, is incorporated herein by reference from the registrant's definitive proxy statement relating to the Annual Meeting of Shareholders to be held in 2022, which definitive proxy statement shall be filed with the Securities and Exchange Commission within 120 days after the end of the fiscal year to which this Report relates.
+
+## Table of Contents
+
+## AMAZON.COM, INC. FORM 10-K
+
+## For the Fiscal Year Ended December 31, 2021
+
+## INDEX
+
+|            |                                                                                                                  | Page     |
+|------------|------------------------------------------------------------------------------------------------------------------|----------|
+| PART I     | PART I                                                                                                           | PART I   |
+| Item 1.    | Business                                                                                                         | 3        |
+| Item 1A.   |
+
+------------------------------------------------------------
+LAST 1000 CHARACTERS:
+------------------------------------------------------------
+ath          | Director                                                                        |
+| /s/ Indra K. Nooyi         |                                                                                 |
+| Indra K. Nooyi             | Director                                                                        |
+| /s/ Jonathan J. Rubinstein |                                                                                 |
+| Jonathan J. Rubinstein     | Director                                                                        |
+| /s/ Patricia Q. Stonesifer |                                                                                 |
+| Patricia Q. Stonesifer     | Director                                                                        |
+| /s/ Wendell P. Weeks       |                                                                                 |
+| Wendell P. Weeks           | Director                                                                        |
+
+------------------------------------------------------------
+LINES CONTAINING 'ITEM' (case-insensitive) - First 50 matches:
+------------------------------------------------------------
+  Line  122: | Item 1.    | Business                                                                                                         | 3        |
+  Line  123: | Item 1A.   | Risk Factors                                                                                                     | 6        |
+  Line  124: | Item 1B.   | Unresolved Staff Comments                                                                                        | 15       |
+  Line  125: | Item 2.    | Properties                                                                                                       | 16       |
+  Line  126: | Item 3.    | Legal Proceedings                                                                                                | 16       |
+  Line  127: | Item 4.    | Mine Safety Disclosures                                                                                          | 16       |
+  Line  129: | Item 5.    | Market for the Registrant's Common Stock, Related Shareholder Matters, and Issuer Purchases of Equity Securities | 17       |
+  Line  130: | Item 6.    | Reserved                                                                                                         | 17       |
+  Line  131: | Item 7.    | Management's Discussion and Analysis of Financial Condition and Results of Operations                            | 18       |
+  Line  132: | Item 7A.   | Quantitative and Qualitative Disclosures About Market Risk                                                       | 31       |
+  Line  133: | Item 8.    | Financial Statements and Supplementary Data                                                                      | 33       |
+  Line  134: | Item 9.    | Changes in and Disagreements with Accountants on Accounting and Financial Disclosure                             | 68       |
+  Line  135: | Item 9A.   | Controls and Procedures                                                                                          | 68       |
+  Line  136: | Item 9B.   | Other Information                                                                                                | 70       |
+  Line  137: | Item 9C.   | Disclosure Regarding Foreign Jurisdictions that Prevent Inspections                                              | 70       |
+  Line  139: | Item 10.   | Directors, Executive Officers, and Corporate Governance                                                          | 70       |
+  Line  140: | Item 11.   | Executive Compensation                                                                                           | 70       |
+  Line  141: | Item 12.   | Security Ownership of Certain Beneficial Owners and Management and Related Shareholder Matters                   | 70       |
+  Line  142: | Item 13.   | Certain Relationships and Related Transactions, and Director Independence                                        | 70       |
+  Line  143: | Item 14.   | Principal Accountant Fees and Services                                                                           | 70       |
+  Line  145: | Item 15.   | Exhibits, Financial Statement Schedules                                                                          | 71       |
+  Line  146: | Item 16.   | Form 10-K Summary                                                                                                | 73       |
+  Line  149: ## Item 1. Business
+  Line  151: This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates
+  Line  157: We have organized our operations into three segments: North America, International, and Amazon Web Services ('AWS'). These segments reflect the way th
+  Line  161: We serve consumers through our online and physical stores and focus on selection, price, and convenience. We design our stores to enable hundreds of m
+  Line  163: We fulfill customer orders in a number of ways, including through: North America and International fulfillment networks that we operate; co-sourced an
+  Line  253: ## Item 1A. Risk Factors
+  Line  255: Please carefully consider the following discussion of significant factors, events, and uncertainties that make an investment in our securities risky. 
+  Line  301: Demand for our products and services can fluctuate significantly for many reasons, including as a result of seasonality, promotions, product launches,
+  Line  425: In addition to risks described elsewhere in this Item 1A relating to fulfillment network and inventory optimization by us and third parties, we are ex
+  Line  435: We have a rapidly evolving business model. The trading price of our common stock fluctuates significantly in response to, among other risks, the risks
+  Line  475: ## Item 1B. Unresolved Staff Comments
+  Line  479: ## Item 2. Properties
+  Line  508: (1) Segment amounts exclude corporate facilities. Shared facilities are allocated among the segments based on usage and primarily relate to facilities
+  Line  512: ## Item 3. Legal Proceedings
+  Line  514: See Item 8 of Part II, 'Financial Statements and Supplementary Data - Note 7 - Commitments and Contingencies - Legal Proceedings.'
+  Line  516: ## Item 4. Mine Safety Disclosures
+  Line  522: ## Item 5. Market for the Registrant's Common Stock, Related Shareholder Matters, and Issuer Purchases of Equity Securities
+  Line  540: ## Item 6. Reserved
+  Line  542: ## Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+  Line  546: This Annual Report on Form 10-K includes forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. All st
+  Line  550: Our primary source of revenue is the sale of a wide range of products and services to customers. The products offered through our stores include merch
+  Line  570: For additional information about each line item addressed above, refer to Item 8 of Part II, 'Financial Statements and Supplementary Data - Note 1 - D
+  Line  572: Our Annual Report on Form 10-K for the year ended December 31, 2020 includes a discussion and analysis of our financial condition and results of opera
+  Line  576: The preparation of financial statements in conformity with generally accepted accounting principles of the United States ('GAAP') requires estimates a
+  Line  612: We had no borrowings outstanding under the unsecured revolving credit facility, $725 million of borrowings outstanding under the commercial paper prog
+  Line  618: As of December 31, 2020 and 2021, restricted cash, cash equivalents, and marketable securities were $257 million and $260 million. See Item 8 of Part 
+  Line  620: We believe that cash flows generated from operations and our cash, cash equivalents, and marketable securities balances, as well as our borrowing arra
+  Line  626: We have organized our operations into three segments: North America, International, and AWS. These segments reflect the way the Company evaluates its 
+
+  Total lines matching 'item': 81
+
+------------------------------------------------------------
+CONTEXT AROUND 'ITEM 1' or 'ITEM 1A' LINES:
+------------------------------------------------------------
+
+  --- Context around line 122 ---
+      Line  117: ## INDEX
+      Line  118: 
+      Line  119: |            |                                                                                                                  | Page     |
+      Line  120: |------------|------------------------------------------------------------------------------------------------------------------|----------|
+      Line  121: | PART I     | PART I                                                                                                           | PART I   |
+  >>> Line  122: | Item 1.    | Business                                                                                                         | 3        |
+      Line  123: | Item 1A.   | Risk Factors                                                                                                     | 6        |
+      Line  124: | Item 1B.   | Unresolved Staff Comments                                                                                        | 15       |
+      Line  125: | Item 2.    | Properties                                                                                                       | 16       |
+      Line  126: | Item 3.    | Legal Proceedings                                                                                                | 16       |
+      Line  127: | Item 4.    | Mine Safety Disclosures                                                                                          | 16       |
+
+  --- Context around line 123 ---
+      Line  118: 
+      Line  119: |            |                                                                                                                  | Page     |
+      Line  120: |------------|------------------------------------------------------------------------------------------------------------------|----------|
+      Line  121: | PART I     | PART I                                                                                                           | PART I   |
+      Line  122: | Item 1.    | Business                                                                                                         | 3        |
+  >>> Line  123: | Item 1A.   | Risk Factors                                                                                                     | 6        |
+      Line  124: | Item 1B.   | Unresolved Staff Comments                                                                                        | 15       |
+      Line  125: | Item 2.    | Properties                                                                                                       | 16       |
+      Line  126: | Item 3.    | Legal Proceedings                                                                                                | 16       |
+      Line  127: | Item 4.    | Mine Safety Disclosures                                                                                          | 16       |
+      Line  128: | PART II    | PART II                                                                                                          | PART II  |
+
+  --- Context around line 149 ---
+      Line  144: | PART IV    | PART IV                                                                                                          | PART IV  |
+      Line  145: | Item 15.   | Exhibits, Financial Statement Schedules                                                                          | 71       |
+      Line  146: | Item 16.   | Form 10-K Summary                                                                                                | 73       |
+      Line  147: | Signatures |                                                                                                                  | 74       |
+      Line  148: 
+  >>> Line  149: ## Item 1. Business
+      Line  150: 
+      Line  151: This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates
+      Line  152: 
+      Line  153: ## General
+      Line  154: 
+
+  --- Context around line 151 ---
+      Line  146: | Item 16.   | Form 10-K Summary                                                                                                | 73       |
+      Line  147: | Signatures |                                                                                                                  | 74       |
+      Line  148: 
+      Line  149: ## Item 1. Business
+      Line  150: 
+  >>> Line  151: This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates
+      Line  152: 
+      Line  153: ## General
+      Line  154: 
+      Line  155: We seek to be Earth's most customer-centric company. We are guided by four principles: customer obsession rather than competitor focus, passion for in
+      Line  156: 
+
+  --- Context around line 253 ---
+      Line  248: | Indra K. Nooyi         |    66 | Former Chief Executive Officer, PepsiCo, Inc.                |
+      Line  249: | Jonathan J. Rubinstein |    65 | Former co-CEO, Bridgewater Associates, LP                    |
+      Line  250: | Patricia Q. Stonesifer |    65 | Former President and Chief Executive Officer, Martha's Table |
+      Line  251: | Wendell P. Weeks       |    62 | Chief Executive Officer, Corning Incorporated                |
+      Line  252: 
+  >>> Line  253: ## Item 1A. Risk Factors
+      Line  254: 
+      Line  255: Please carefully consider the following discussion of significant factors, events, and uncertainties that make an investment in our securities risky. 
+      Line  256: 
+      Line  257: ## Business and Industry Risks
+      Line  258: 
+
+  --- Context around line 301 ---
+      Line  296: 
+      Line  297: The People's Republic of China ('PRC') and India regulate Amazon's and its affiliates' businesses and operations in country through regulations and li
+      Line  298: 
+      Line  299: ## The Variability in Our Retail Business Places Increased Strain on Our Operations
+      Line  300: 
+  >>> Line  301: Demand for our products and services can fluctuate significantly for many reasons, including as a result of seasonality, promotions, product launches,
+      Line  302: 
+      Line  303: We generally have payment terms with our retail vendors that extend beyond the amount of time necessary to collect proceeds from our consumer customer
+      Line  304: 
+      Line  305: ## We Are Impacted by Fraudulent or Unlawful Activities of Sellers
+      Line  306: 
+
+  --- Context around line 425 ---
+      Line  420: 
+      Line  421: As a result of future acquisitions or mergers, we might need to issue additional equity securities, spend our cash, or incur debt, contingent liabilit
+      Line  422: 
+      Line  423: ## We Face Significant Inventory Risk
+      Line  424: 
+  >>> Line  425: In addition to risks described elsewhere in this Item 1A relating to fulfillment network and inventory optimization by us and third parties, we are ex
+      Line  426: 
+      Line  427: ## We Are Subject to Payments-Related Risks
+      Line  428: 
+      Line  429: We accept payments using a variety of methods, including credit card, debit card, credit accounts (including promotional financing), gift cards, direc
+      Line  430: 
+
+  --- Context around line 435 ---
+      Line  430: 
+      Line  431: In addition, we provide regulated services in certain jurisdictions because we enable customers to keep account balances with us and transfer money to
+      Line  432: 
+      Line  433: ## We Have a Rapidly Evolving Business Model and Our Stock Price Is Highly Volatile
+      Line  434: 
+  >>> Line  435: We have a rapidly evolving business model. The trading price of our common stock fluctuates significantly in response to, among other risks, the risks
+      Line  436: 
+      Line  437: - changes in interest rates;
+      Line  438: - conditions or trends in the Internet and the industry segments we operate in;
+      Line  439: - quarterly variations in operating results;
+      Line  440: - fluctuations in the stock market in general and market prices for Internet-related companies in particular;
+
+  --- Context around line 546 ---
+      Line  541: 
+      Line  542: ## Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations
+      Line  543: 
+      Line  544: ## Forward-Looking Statements
+      Line  545: 
+  >>> Line  546: This Annual Report on Form 10-K includes forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. All st
+      Line  547: 
+      Line  548: ## Overview
+      Line  549: 
+      Line  550: Our primary source of revenue is the sale of a wide range of products and services to customers. The products offered through our stores include merch
+      Line  551: 
+
+  --- Context around line 620 ---
+      Line  615: 
+      Line  616: Tax benefits relating to excess stock-based compensation deductions and accelerated depreciation deductions are reducing our U.S. taxable income. U.S.
+      Line  617: 
+      Line  618: As of December 31, 2020 and 2021, restricted cash, cash equivalents, and marketable securities were $257 million and $260 million. See Item 8 of Part 
+      Line  619: 
+  >>> Line  620: We believe that cash flows generated from operations and our cash, cash equivalents, and marketable securities balances, as well as our borrowing arra
+      Line  621: 
+      Line  622: The sale of additional equity or convertible debt securities would be dilutive to our shareholders. In addition, we will, from time to time, consider 
+      Line  623: 
+      Line  624: ## Results of Operations
+      Line  625: 
+
+------------------------------------------------------------
+MARKDOWN HEADER PATTERNS (lines starting with #):
+------------------------------------------------------------
+  Line    1: ## UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+  Line   27: ## AMAZON.COM, INC.
+  Line  107: ## DOCUMENTS INCORPORATED BY REFERENCE
+  Line  111: ## Table of Contents
+  Line  113: ## AMAZON.COM, INC. FORM 10-K
+  Line  115: ## For the Fiscal Year Ended December 31, 2021
+  Line  117: ## INDEX
+  Line  149: ## Item 1. Business
+  Line  153: ## General
+  Line  159: ## Consumers
+  Line  165: ## Sellers
+  Line  169: ## Developers and Enterprises
+  Line  173: ## Content Creators
+  Line  177: ## Advertisers
+  Line  181: ## AMAZON.COM, INC.
+  Line  183: ## PART I
+  Line  185: ## Competition
+  Line  189: ## Intellectual Property
+  Line  193: ## Seasonality
+  Line  197: ## Human Capital
+  Line  203: ## Available Information
+  Line  207: ## Executive Officers and Directors
+  Line  211: ## Information About Our Executive Officers
+  Line  237: ## Board of Directors
+  Line  253: ## Item 1A. Risk Factors
+  Line  257: ## Business and Industry Risks
+  Line  259: ## We Face Intense Competition
+  Line  265: ## Our Expansion into New Products, Services, Technologies, and Geographic Regions Subjects Us to Additional Risks
+  Line  269: ## Our International Operations Expose Us to a Number of Risks
+  Line  299: ## The Variability in Our Retail Business Places Increased Strain on Our Operations
+  Line  305: ## We Are Impacted by Fraudulent or Unlawful Activities of Sellers
+  Line  309: ## We Face Risks Related to Adequately Protecting Our Intellectual Property Rights and Being Accused of Infringing Intellectual Property Rights of Thi
+  Line  319: ## We Have Foreign Exchange Risk
+  Line  323: ## Operating Risks
+  Line  325: ## Our Expansion Places a Significant Strain on our Management, Operational, Financial, and Other Resources
+  Line  329: ## We Experience Significant Fluctuations in Our Operating Results and Growth Rate
+  Line  360: ## We Face Risks Related to Successfully Optimizing and Operating Our Fulfillment Network and Data Centers
+  Line  370: ## We Could Be Harmed by Data Loss or Other Security Breaches
+  Line  374: ## We Face Risks Related to System Interruption and Lack of Redundancy
+  Line  380: ## The Loss of Key Senior Management Personnel or the Failure to Hire and Retain Highly Skilled and Other Key Personnel Could Negatively Affect Our Bu
+  Line  384: ## Our Supplier Relationships Subject Us to a Number of Risks
+  Line  388: ## Our Commercial Agreements, Strategic Alliances, and Other Business Relationships Expose Us to Risks
+  Line  402: ## Our Business Suffers When We Are Unsuccessful in Making, Integrating, and Maintaining Acquisitions and Investments
+  Line  423: ## We Face Significant Inventory Risk
+  Line  427: ## We Are Subject to Payments-Related Risks
+  Line  433: ## We Have a Rapidly Evolving Business Model and Our Stock Price Is Highly Volatile
+  Line  449: ## Legal and Regulatory Risks
+  Line  451: ## Government Regulation Is Evolving and Unfavorable Changes Could Harm Our Business
+  Line  455: ## Claims, Litigation, Government Investigations, and Other Proceedings May Adversely Affect Our Business and Results of Operations
+  Line  459: ## We Are Subject to Product Liability Claims When People or Property Are Harmed by the Products We Sell or Manufacture
+
+  Total markdown headers: 201
+
+------------------------------------------------------------
+CURRENT REGEX PATTERN MATCHES (r'^ITEM\s+(\d{1,2}[A]?)\.\s+(.+)$'):
+------------------------------------------------------------
+
+  Total regex matches: 0
+
+------------------------------------------------------------
+ALL 'ITEM <N>' VARIATIONS (any case, with or without markdown):
+------------------------------------------------------------
+  Line  149: [## Item 1. Business]
+  Line  253: [## Item 1A. Risk Factors]
+  Line  475: [## Item 1B. Unresolved Staff Comments]
+  Line  479: [## Item 2. Properties]
+  Line  512: [## Item 3. Legal Proceedings]
+  Line  516: [## Item 4. Mine Safety Disclosures]
+  Line  522: [## Item 5. Market for the Registrant's Common Stock, Related Shareholder Matters, and Issuer Purchases of Equity Securities]
+  Line  540: [## Item 6. Reserved]
+  Line  542: [## Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations]
+  Line  864: [## Item 7A. Quantitative and Qualitative Disclosures About Market Risk]
+  Line  909: [## Item 8. Financial Statements and Supplementary Data]
+  Line 2045: [## Item 9. Changes in and Disagreements with Accountants On Accounting and Financial Disclosure]
+  Line 2049: [## Item 9A. Controls and Procedures]
+  Line 2098: [## Item 9B. Other Information]
+  Line 2102: [## Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections]
+  Line 2108: [## Item 10. Directors, Executive Officers, and Corporate Governance]
+  Line 2112: [## Item 11. Executive Compensation]
+  Line 2116: [## Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Shareholder Matters]
+  Line 2120: [## Item 13. Certain Relationships and Related Transactions, and Director Independence]
+  Line 2124: [## Item 14. Principal Accountant Fees and Services]
+  Line 2128: [## Item 15. Exhibits, Financial Statement Schedules]
+  Line 2189: [## Item 16. Form 10-K Summary]
+
+  Total relaxed matches: 22

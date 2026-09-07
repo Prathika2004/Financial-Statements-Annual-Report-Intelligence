@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEC 10-K RAG</title>
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --panel: #ffffff;
+    --border: #e3e2df;
+    --text: #1f1f1e;
+    --text-dim: #6b6a66;
+    --accent: #b5522f;
+    --accent-dim: #f0e2dc;
+    --good: #2f7a4f;
+    --bad: #c0392b;
+    --code-bg: #f0efec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171716;
+      --panel: #212120;
+      --border: #34332f;
+      --text: #ecebe8;
+      --text-dim: #a3a19a;
+      --accent: #e0754c;
+      --accent-dim: #3a2a22;
+      --good: #5fbf82;
+      --bad: #e0685c;
+      --code-bg: #292825;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  header {
+    display: flex; align-items: center; gap: 24px;
+    padding: 14px 24px; border-bottom: 1px solid var(--border);
+    background: var(--panel); position: sticky; top: 0; z-index: 10;
+  }
+  header h1 { font-size: 16px; margin: 0; white-space: nowrap; }
+  header h1 span { color: var(--text-dim); font-weight: 400; }
+  nav { display: flex; gap: 4px; }
+  nav button {
+    border: none; background: transparent; color: var(--text-dim);
+    padding: 8px 14px; border-radius: 7px; font-size: 14px; cursor: pointer;
+  }
+  nav button.active { background: var(--accent-dim); color: var(--accent); font-weight: 600; }
+  #status-dot-wrap { margin-left: auto; display: flex; gap: 14px; font-size: 13px; color: var(--text-dim); }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; background: var(--text-dim); }
+  .dot.ok { background: var(--good); }
+  .dot.bad { background: var(--bad); }
+
+  main { max-width: 900px; margin: 0 auto; padding: 28px 24px 80px; }
+  .view { display: none; }
+  .view.active { display: block; }
+
+  /* --- Overview --- */
+  .lede { color: var(--text-dim); margin-bottom: 28px; font-size: 15px; }
+  .stat-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; min-width: 110px; }
+  .stat .n { font-size: 22px; font-weight: 700; }
+  .stat .l { font-size: 12px; color: var(--text-dim); }
+
+  .stage { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border); }
+  .stage:last-child { border-bottom: none; }
+  .stage .num {
+    flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%;
+    background: var(--accent-dim); color: var(--accent); font-weight: 700; font-size: 13px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .stage h3 { margin: 2px 0 4px; font-size: 15px; }
+  .stage p { margin: 0 0 8px; color: var(--text-dim); font-size: 13.5px; }
+  .tech-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill {
+    font-size: 11.5px; background: var(--code-bg); color: var(--text-dim);
+    padding: 3px 9px; border-radius: 100px; border: 1px solid var(--border);
+  }
+
+  /* --- Ask --- */
+  .ask-form { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
+  .ask-form textarea {
+    width: 100%; min-height: 70px; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--bg); color: var(--text);
+    font-size: 14.5px; font-family: inherit; resize: vertical;
+  }
+  .filters { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+  .filters select, .filters input {
+    padding: 7px 10px; border-radius: 7px; border: 1px solid var(--border);
+    background: var(--bg); color: var(--text); font-size: 13px;
+  }
+  .ask-form-footer { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
+  button.primary {
+    background: var(--accent); color: white; border: none; border-radius: 8px;
+    padding: 9px 20px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  button.primary:disabled { opacity: 0.5; cursor: not-allowed; }
+  #elapsed { font-size: 13px; color: var(--text-dim); }
+
+  #answer-wrap { display: none; }
+  #answer-box {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px; white-space: pre-wrap; font-size: 14.5px; min-height: 60px;
+  }
+  #answer-box .cursor { display: inline-block; width: 7px; height: 15px; background: var(--accent); vertical-align: middle; animation: blink 1s step-start infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .warning-box {
+    margin-top: 12px; padding: 10px 14px; border-radius: 8px;
+    background: color-mix(in srgb, var(--bad) 12%, var(--panel));
+    border: 1px solid var(--bad); color: var(--bad); font-size: 13px;
+  }
+  .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .badge {
+    font-size: 11.5px; font-weight: 600; padding: 3px 10px; border-radius: 100px;
+    border: 1px solid var(--border);
+  }
+  .badge.cached { color: var(--good); border-color: var(--good); background: color-mix(in srgb, var(--good) 12%, var(--panel)); }
+  .badge.blocked, .badge.low-confidence { color: var(--bad); border-color: var(--bad); background: color-mix(in srgb, var(--bad) 12%, var(--panel)); }
+  #sources { margin-top: 18px; }
+  #sources h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-dim); margin-bottom: 8px; }
+  .source-card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 8px; font-size: 13px;
+  }
+  .source-card .meta { color: var(--text-dim); font-size: 12px; margin-bottom: 5px; }
+  .source-card .score { float: right; color: var(--accent); font-weight: 600; }
+  .source-card .text { color: var(--text-dim); max-height: 60px; overflow: hidden; }
+
+  #error-box { display: none; margin-top: 12px; padding: 10px 14px; border-radius: 8px; background: color-mix(in srgb, var(--bad) 12%, var(--panel)); border: 1px solid var(--bad); color: var(--bad); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SEC 10-K RAG <span>· local pipeline</span></h1>
+  <nav>
+    <button id="tab-overview" class="active" onclick="showView('overview')">Overview</button>
+    <button id="tab-ask" onclick="showView('ask')">Ask a question</button>
+  </nav>
+  <div id="status-dot-wrap">
+    <span><span class="dot" id="dot-qdrant"></span>Qdrant</span>
+    <span><span class="dot" id="dot-ollama"></span>Ollama</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== OVERVIEW ===================== -->
+  <section id="view-overview" class="view active">
+    <p class="lede">
+      A retrieval-augmented question-answering system over 10 companies' SEC 10-K filings
+      (5 fiscal years each), running entirely on this machine with open-source models —
+      no cloud LLM, no API keys, nothing leaves this computer. Every stage below was built
+      and independently verified against real data before the next one started.
+    </p>
+
+    <div class="stat-row">
+      <div class="stat"><div class="n">50</div><div class="l">filings</div></div>
+      <div class="stat"><div class="n">10</div><div class="l">companies</div></div>
+      <div class="stat"><div class="n">29,886</div><div class="l">chunks</div></div>
+      <div class="stat"><div class="n">384</div><div class="l">embedding dims</div></div>
+      <div class="stat"><div class="n">10</div><div class="l">pipeline stages</div></div>
+    </div>
+
+    <div id="stage-list"></div>
+  </section>
+
+  <!-- ===================== ASK ===================== -->
+  <section id="view-ask" class="view">
+    <div class="ask-form">
+      <textarea id="question" placeholder="e.g. What are the main risk factors related to cybersecurity?"></textarea>
+      <div class="filters">
+        <select id="ticker">
+          <option value="">Any company</option>
+        </select>
+        <input id="fiscal_year" type="number" placeholder="Fiscal year (optional)" min="2000" max="2030">
+        <select id="chunk_type">
+          <option value="">Any content</option>
+          <option value="text">Text only</option>
+          <option value="table">Tables only</option>
+        </select>
+        <select id="technique">
+          <option value="none">No query transformation</option>
+          <option value="rewrite">Rewrite</option>
+          <option value="step-back">Step-back</option>
+          <option value="multi-query">Multi-query</option>
+          <option value="decompose">Decompose</option>
+          <option value="hyde">HyDE</option>
+        </select>
+      </div>
+      <div class="ask-form-footer">
+        <button class="primary" id="ask-btn" onclick="askQuestion()">Ask</button>
+        <span id="elapsed"></span>
+      </div>
+    </div>
+
+    <div id="error-box"></div>
+
+    <div id="answer-wrap">
+      <div class="badge-row" id="badge-row"></div>
+      <div id="answer-box"></div>
+      <div id="warning-slot"></div>
+      <div id="sources"></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+const STAGES = [
+  {n: 1, name: "Ingestion", desc: "PDF → structured Markdown via Docling (layout-aware: preserves headings and tables), pdfplumber as a plain-text fallback.", tech: ["Docling", "pdfplumber"]},
+  {n: 2, name: "Cleaning", desc: "Strips repeated running headers and page-number lines, conservatively — never touches text that merely looks repetitive.", tech: ["custom rules"]},
+  {n: 3, name: "Metadata & sections", desc: "Extracts ticker/company/fiscal year and every Item-N section boundary. Cross-checked against SEC EDGAR's own registry, with a Markdown-heading fallback for filers (e.g. Intel) that don't use standard Item labels.", tech: ["SEC EDGAR API", "regex + scoring heuristics"]},
+  {n: 4, name: "Chunking", desc: "Section-bounded so a chunk never mixes two topics. Tables extracted as standalone, captioned chunks; oversized tables split only at row boundaries so numbers are never corrupted.", tech: ["custom recursive splitter"]},
+  {n: 5, name: "Embeddings", desc: "Every chunk embedded into a 384-dim vector for semantic search. Runs on CPU via OpenVINO (Intel-optimized), cached locally after first export.", tech: ["BAAI/bge-small-en-v1.5", "OpenVINO", "sentence-transformers"]},
+  {n: 6, name: "Vector storage", desc: "All vectors + metadata stored in a local Qdrant collection with HNSW indexing, running in Docker.", tech: ["Qdrant", "Docker"]},
+  {n: 7, name: "Retrieval", desc: "Hybrid search: dense (embedding similarity) + BM25 (keyword) results merged via Reciprocal Rank Fusion, with metadata filtering by ticker/year/content-type.", tech: ["Qdrant search", "rank-bm25", "RRF"]},
+  {n: 8, name: "Reranking", desc: "A cross-encoder re-scores the fused candidates for final relevance ordering before anything reaches the LLM.", tech: ["FlashRank · ms-marco-MiniLM-L-12-v2"]},
+  {n: 9, name: "Query transform & generation", desc: "Optional rewrite / multi-query / decomposition / HyDE before retrieval; the final answer is generated strictly from retrieved sources, with an automatic check for numbers the model may have invented.", tech: ["Qwen2.5 7B via Ollama", "numeric grounding check"]},
+  {n: 10, name: "API", desc: "A local FastAPI server exposing this whole pipeline over HTTP — blocking and streaming Q&A endpoints, plus this page.", tech: ["FastAPI", "Server-Sent Events"]},
+];
+
+const stageList = document.getElementById("stage-list");
+STAGES.forEach(s => {
+  const el = document.createElement("div");
+  el.className = "stage";
+  el.innerHTML = `
+    <div class="num">${s.n}</div>
+    <div>
+      <h3>${s.name}</h3>
+      <p>${s.desc}</p>
+      <div class="tech-pills">${s.tech.map(t => `<span class="pill">${t}</span>`).join("")}</div>
+    </div>`;
+  stageList.appendChild(el);
+});
+
+function showView(name) {
+  document.getElementById("view-overview").classList.toggle("active", name === "overview");
+  document.getElementById("view-ask").classList.toggle("active", name === "ask");
+  document.getElementById("tab-overview").classList.toggle("active", name === "overview");
+  document.getElementById("tab-ask").classList.toggle("active", name === "ask");
+}
+
+async function checkHealth() {
+  try {
+    const res = await fetch("/health");
+    const data = await res.json();
+    document.getElementById("dot-qdrant").className = "dot " + (data.qdrant ? "ok" : "bad");
+    document.getElementById("dot-ollama").className = "dot " + (data.ollama ? "ok" : "bad");
+  } catch (e) {
+    document.getElementById("dot-qdrant").className = "dot bad";
+    document.getElementById("dot-ollama").className = "dot bad";
+  }
+}
+
+async function loadTickers() {
+  try {
+    const res = await fetch("/tickers");
+    const tickers = await res.json();
+    const sel = document.getElementById("ticker");
+    tickers.forEach(t => {
+      const opt = document.createElement("option");
+      opt.value = t; opt.textContent = t;
+      sel.appendChild(opt);
+    });
+  } catch (e) { /* dropdown just stays at "Any company" */ }
+}
+
+checkHealth();
+loadTickers();
+setInterval(checkHealth, 15000);
+
+let elapsedTimer = null;
+
+function startElapsedTimer() {
+  const t0 = Date.now();
+  const el = document.getElementById("elapsed");
+  elapsedTimer = setInterval(() => {
+    el.textContent = `${((Date.now() - t0) / 1000).toFixed(0)}s — generation on this CPU typically takes a few minutes`;
+  }, 1000);
+}
+function stopElapsedTimer() {
+  clearInterval(elapsedTimer);
+  document.getElementById("elapsed").textContent = "";
+}
+
+async function askQuestion() {
+  const question = document.getElementById("question").value.trim();
+  if (!question) return;
+
+  const payload = {
+    question,
+    technique: document.getElementById("technique").value,
+  };
+  const ticker = document.getElementById("ticker").value;
+  const fiscalYear = document.getElementById("fiscal_year").value;
+  const chunkType = document.getElementById("chunk_type").value;
+  if (ticker) payload.ticker = ticker;
+  if (fiscalYear) payload.fiscal_year = parseInt(fiscalYear, 10);
+  if (chunkType) payload.chunk_type = chunkType;
+
+  const askBtn = document.getElementById("ask-btn");
+  const answerWrap = document.getElementById("answer-wrap");
+  const answerBox = document.getElementById("answer-box");
+  const errorBox = document.getElementById("error-box");
+  const warningSlot = document.getElementById("warning-slot");
+  const sourcesDiv = document.getElementById("sources");
+  const badgeRow = document.getElementById("badge-row");
+
+  askBtn.disabled = true;
+  errorBox.style.display = "none";
+  warningSlot.innerHTML = "";
+  sourcesDiv.innerHTML = "";
+  badgeRow.innerHTML = "";
+  answerWrap.style.display = "block";
+  answerBox.innerHTML = '<span class="cursor"></span>';
+  startElapsedTimer();
+
+  try {
+    const response = await fetch("/ask/stream", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload),
+    });
+    if (!response.ok) {
+      throw new Error(`Server returned ${response.status}`);
+    }
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+    let answerText = "";
+
+    while (true) {
+      const {done, value} = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, {stream: true});
+      const events = buffer.split("\n\n");
+      buffer = events.pop();
+
+      for (const raw of events) {
+        if (!raw.startsWith("data: ")) continue;
+        const event = JSON.parse(raw.slice(6));
+
+        if (event.type === "token") {
+          answerText += event.content;
+          answerBox.innerHTML = escapeHtml(answerText) + '<span class="cursor"></span>';
+        } else if (event.type === "done") {
+          answerBox.textContent = answerText;
+
+          const badges = [];
+          if (event.cached) badges.push('<span class="badge cached">from cache</span>');
+          if (event.blocked) badges.push('<span class="badge blocked">blocked by guardrail</span>');
+          if (event.low_confidence) badges.push('<span class="badge low-confidence">low retrieval confidence</span>');
+          badgeRow.innerHTML = badges.join("");
+
+          const warnings = [];
+          if (event.numeric_check && event.numeric_check.unverified.length) {
+            warnings.push(`⚠ Numbers in this answer weren't found in any retrieved source
+              (possible fabrication): ${escapeHtml(event.numeric_check.unverified.join(", "))}`);
+          }
+          if (event.citation_check) {
+            if (event.citation_check.missing_citation) {
+              warnings.push("⚠ This answer doesn't cite any source.");
+            }
+            if (event.citation_check.out_of_range_citations && event.citation_check.out_of_range_citations.length) {
+              warnings.push(`⚠ This answer cites a source number that doesn't exist: ${event.citation_check.out_of_range_citations.join(", ")}`);
+            }
+          }
+          warningSlot.innerHTML = warnings.map(w => `<div class="warning-box">${w}</div>`).join("");
+
+          if (event.sources && event.sources.length) {
+            let html = "<h4>Sources</h4>";
+            event.sources.forEach((s, i) => {
+              html += `<div class="source-card">
+                <span class="score">${s.score.toFixed(3)}</span>
+                <div class="meta">${escapeHtml(s.company_name || s.ticker || "")} FY${s.fiscal_year} · ${escapeHtml(s.section_item || "")} · ${s.chunk_type}</div>
+                <div class="text">${escapeHtml(s.text.slice(0, 220))}…</div>
+              </div>`;
+            });
+            sourcesDiv.innerHTML = html;
+          }
+        }
+      }
+    }
+  } catch (e) {
+    errorBox.style.display = "block";
+    errorBox.textContent = "Request failed: " + e.message + " — check that Ollama and Qdrant are both running (see the status dots above).";
+  } finally {
+    askBtn.disabled = false;
+    stopElapsedTimer();
+  }
+}
+
+function escapeHtml(str) {
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+</script>
+
+</body>
+</html>
